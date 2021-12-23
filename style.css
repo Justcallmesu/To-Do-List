@@ -1,11 +1,15 @@
 body {
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   height: 1300px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #c7bea2;
+  background-color: #519259;
+  color: white;
 }
 /* View Todo */
+h1 {
+  text-align: center;
+}
 .viewTodo {
   border: 1px solid black;
   min-width: 90%;
@@ -13,15 +17,17 @@ body {
   max-height: 400px;
   overflow-y: scroll;
   background-color: #fff;
+  margin: 0 20px;
 }
 .viewTodo ol {
   margin: 0;
-  padding: 0 25px;
+  padding: 0 0 0 20px;
 }
 .viewTodo p {
   font-size: 20px;
   margin: 5px;
   word-wrap: break-word;
+  cursor: pointer;
 }
 /* Create Delete */
 .manipulationSection {
@@ -30,6 +36,7 @@ body {
 }
 .create {
   margin: 30px 0;
+  text-align: center;
 }
 .create textarea {
   width: 100%;
@@ -41,12 +48,26 @@ body {
 .create button {
   width: 100%;
   height: 55px;
+  cursor: pointer;
 }
 .pressed {
-  background: lightseagreen;
+  background: #f2ddc1;
 }
 .error {
   color: red;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #064635;
+}
+footer a {
+  color: orange;
+  text-decoration: none;
+}
+footer a:hover {
+  color: yellow;
 }
 /* Desktop */
 @media (min-width: 992px) {
@@ -61,7 +82,7 @@ body {
     width: 100%;
   }
   .create button {
-    width: 100%;
+    width: 101%;
     height: 55px;
   }
   .create textarea {
